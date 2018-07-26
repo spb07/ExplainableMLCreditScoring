@@ -1,3 +1,5 @@
+import pandas as pd
+
 class Gscore():
     def __init__(self, y_act, y_predi):
         self.y_actual = y_act
@@ -43,12 +45,9 @@ class Gscore():
 
     def g_mean(self):
         return self.sensi()* self.speci()
-    
-    def reset_scores(self):
-        self.TP = 0 # True positive
-        self.FP = 0 # False positive
-        self.TN = 0 # True negative
-        self.FN = 0 # False negative
+
+
+        
 
 
 
